@@ -22,7 +22,6 @@ Download the VS Solution and Compile the exe for yourself,
 or find it in the release folder.
 
 `\bin\Release\AutoClicker.exe`  
-[**\bin\Release\AutoClicker.exe**](https://github.com/haekkzer/AutoClicker/tree/master/bin/Releases)
 
 ## How to use
 
