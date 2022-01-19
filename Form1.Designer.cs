@@ -1,5 +1,5 @@
 ﻿
-namespace MausClicker
+namespace AutoClicker
 {
     partial class MainWindow
     {
@@ -92,7 +92,7 @@ namespace MausClicker
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::MausClicker.Properties.Resources.Indicator_RED;
+            this.pictureBox1.Image = global::AutoClicker.Properties.Resources.Indicator_RED;
             this.pictureBox1.Location = new System.Drawing.Point(90, 9);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";

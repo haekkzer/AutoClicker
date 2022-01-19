@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace MausClicker
+namespace AutoClicker
 {
 	public partial class MainWindow : Form
 	{
