@@ -41,8 +41,13 @@ namespace MausClicker
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.trackBar2 = new System.Windows.Forms.TrackBar();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -72,16 +77,17 @@ namespace MausClicker
             // trackBar1
             // 
             this.trackBar1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.trackBar1.LargeChange = 20;
+            this.trackBar1.LargeChange = 100;
             this.trackBar1.Location = new System.Drawing.Point(9, 80);
             this.trackBar1.Margin = new System.Windows.Forms.Padding(2);
-            this.trackBar1.Maximum = 100;
-            this.trackBar1.Minimum = 1;
+            this.trackBar1.Maximum = 240;
+            this.trackBar1.Minimum = 10;
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.trackBar1.Size = new System.Drawing.Size(257, 45);
+            this.trackBar1.SmallChange = 5;
             this.trackBar1.TabIndex = 2;
-            this.trackBar1.Value = 50;
+            this.trackBar1.Value = 120;
             this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // pictureBox1
@@ -137,7 +143,7 @@ namespace MausClicker
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 15);
             this.label3.TabIndex = 7;
-            this.label3.Text = "~1 C/S";
+            this.label3.Text = "~4 C/S";
             // 
             // label4
             // 
@@ -155,13 +161,60 @@ namespace MausClicker
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(49, 15);
             this.label5.TabIndex = 9;
-            this.label5.Text = "~9 C/S";
+            this.label5.Text = "~8 C/S";
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(9, 141);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(145, 19);
+            this.checkBox2.TabIndex = 10;
+            this.checkBox2.Text = "Enable Multiplier";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
+            // trackBar2
+            // 
+            this.trackBar2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.trackBar2.Enabled = false;
+            this.trackBar2.LargeChange = 1;
+            this.trackBar2.Location = new System.Drawing.Point(9, 165);
+            this.trackBar2.Margin = new System.Windows.Forms.Padding(2);
+            this.trackBar2.Maximum = 4;
+            this.trackBar2.Minimum = 1;
+            this.trackBar2.Name = "trackBar2";
+            this.trackBar2.Size = new System.Drawing.Size(257, 45);
+            this.trackBar2.TabIndex = 11;
+            this.trackBar2.Value = 1;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 197);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(21, 15);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "x1";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(245, 197);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(21, 15);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "x4";
             // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(277, 135);
+            this.ClientSize = new System.Drawing.Size(277, 221);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.trackBar2);
+            this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -176,9 +229,10 @@ namespace MausClicker
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "MainWindow";
-            this.Text = "Maus Clicker";
+            this.Text = "AutoClicker";
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,6 +251,10 @@ namespace MausClicker
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.TrackBar trackBar2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }
 
