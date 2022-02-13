@@ -1,6 +1,6 @@
 # AutoClicker
 
-![title](AutoClicker.png)
+![title](Resources_External/AutoClicker.png)
 
 AutoClicker is a simple .EXE created by myself, with the help of others.  
 Inspiried by some old, other `MichisClicker` i wanted to do my own, so here we go:
@@ -19,10 +19,10 @@ Inspiried by some old, other `MichisClicker` i wanted to do my own, so here we g
 ## Setup
 
 Download the VS Solution and Compile the exe for yourself,
-or find it in the release folder.
+or find it in the Release folder.
 
 `\bin\Release\AutoClicker.exe`  
-[**\bin\Release\AutoClicker.exe**](https://github.com/haekkzer/AutoClicker/tree/master/bin/Releases)
+[**\bin\Release\AutoClicker.exe**](https://github.com/haekkzer/AutoClicker/blob/master/bin/Release/AutoClicker.exe)
 
 ## How to use
 
@@ -37,6 +37,15 @@ For some serious fast clicking needs, you can enable the Muliplier and slide it 
 With some math you can calculate how many clicks you could do with this.
 
 ## Changelog
+
+### 2022-02-13 V.1.1.0
+
+- `AutoClicker.ini` save file
+- Enable / Disable Hotkey
+- Added icon
+- UI Update
+- Improved Click
+- Renamed internal coding stuff
 
 ### 2022-01-19 V.1.0.2
 
